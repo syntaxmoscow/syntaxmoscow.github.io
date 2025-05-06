@@ -20,14 +20,22 @@
 
 @media (max-width: 600px) {
   header {
-    flex-direction: row; /* фиксируем горизонтально */
+    display: flex;
+    flex-direction: row; /* оставляем горизонтально */
     justify-content: space-between;
     align-items: center;
+    padding: 1rem 2rem;
     position: relative;
+  }
+
+  nav {
+    display: none; /* скрываем обычное меню */
   }
 
   .menu-toggle {
     display: block;
+    font-size: 1.8rem;
+    cursor: pointer;
   }
 
   #mobileMenu {
