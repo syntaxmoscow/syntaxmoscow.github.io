@@ -19,6 +19,13 @@
 }
 
 @media (max-width: 600px) {
+  header {
+    flex-direction: row; /* фиксируем горизонтально */
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
   .menu-toggle {
     display: block;
   }
@@ -27,8 +34,8 @@
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 4rem;
-    right: 2rem;
+    top: 3.5rem;
+    right: 1rem;
     background-color: #f7f7f5;
     padding: 1rem;
     border: 1px solid #ccc;
@@ -38,6 +45,7 @@
   #mobileMenu.open {
     display: flex;
   }
+}
 
   header {
     flex-direction: row;
