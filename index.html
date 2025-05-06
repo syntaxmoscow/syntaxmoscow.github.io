@@ -5,77 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Синтакс</title>
   <style>
-/* Показывается всегда */
-.menu-toggle {
-  display: none;
-  font-size: 1.8rem;
-  cursor: pointer;
-}
-
-/* Мобильное меню — скрыто по умолчанию */
-#mobileMenu {
-  display: flex;
-  gap: 1.5rem;
-}
-
-@media (max-width: 600px) {
-  header {
-    display: flex;
-    flex-direction: row; /* оставляем горизонтально */
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    position: relative;
-  }
-
-  nav {
-    display: none; /* скрываем обычное меню */
-  }
-
-  .menu-toggle {
-    display: block;
-    font-size: 1.8rem;
-    cursor: pointer;
-  }
-
-  #mobileMenu {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 3.5rem;
-    right: 1rem;
-    background-color: #f7f7f5;
-    padding: 1rem;
-    border: 1px solid #ccc;
-    z-index: 1000;
-  }
-
-  #mobileMenu.open {
-    display: flex;
-  }
-}
-
-  header {
-    flex-direction: row;
-    align-items: center;
-    position: relative;
-  }
-}
-
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #f7f7f5; /* молочно-серый */
+      background-color: #f7f7f5;
       color: #000;
     }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  margin-top: 2rem; /* Добавлен отступ сверху */
-}
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 2rem;
+      position: relative;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
 
     nav {
       display: flex;
@@ -88,11 +36,13 @@ header {
       font-weight: bold;
     }
 
-    .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
+    .menu-toggle {
+      display: none;
+      font-size: 1.8rem;
+      cursor: pointer;
     }
 
+    /* Центр */
     .center-content {
       display: flex;
       flex-direction: column;
@@ -121,44 +71,53 @@ header {
       background-color: #333;
     }
 
+    /* Мобильный вид */
     @media (max-width: 600px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
-      }
       nav {
+        display: none;
         flex-direction: column;
-        gap: 0.5rem;
+        position: absolute;
+        top: 4.5rem;
+        right: 2rem;
+        background-color: #f7f7f5;
+        padding: 1rem;
+        border: 1px solid #ccc;
+        z-index: 1000;
       }
-      .center-content {
-        height: 60vh;
+
+      nav.open {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
       }
     }
   </style>
 </head>
 <body>
-<header>
-  <div class="logo">Синтакс</div>
-  <div class="menu-toggle" id="menuToggle">&#9776;</div>
-  <nav id="mobileMenu">
-    <a href="uslugi.html">Услуги</a>
-    <a href="about.html">О себе</a>
-    <a href="cases.html">Кейсы</a>
-  </nav>
-</header>
+  <header>
+    <div class="logo">Синтакс</div>
+    <div class="menu-toggle" id="menuToggle">&#9776;</div>
+    <nav id="navMenu">
+      <a href="uslugi.html">Услуги</a>
+      <a href="about.html">О себе</a>
+      <a href="cases.html">Кейсы</a>
+    </nav>
+  </header>
 
   <main class="center-content">
     <p>Ваш текст</p>
-    <a class="button" href="https://t.me/w3bspy" target="_blank">Написать</a>
+    <a class="button" href="https://t.me/your_username" target="_blank">Написать</a>
   </main>
-<script>
-  const toggle = document.getElementById('menuToggle');
-  const menu = document.getElementById('mobileMenu');
 
-  toggle.addEventListener('click', () => {
-    menu.classList.toggle('open');
-  });
-</script>
+  <script>
+    const toggle = document.getElementById('menuToggle');
+    const menu = document.getElementById('navMenu');
+
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('open');
+    });
+  </script>
 </body>
 </html>
