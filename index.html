@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Синтакс</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f5; /* молочно-серый */
+      color: #000;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+
+    nav {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .center-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 70vh;
+      text-align: center;
+    }
+
+    .center-content p {
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+    }
+
+    .center-content a.button {
+      background-color: black;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .center-content a.button:hover {
+      background-color: #333;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+      nav {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      .center-content {
+        height: 60vh;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Синтакс</div>
+    <nav>
+      <a href="uslugi.html">Услуги</a>
+      <a href="about.html">О себе</a>
+      <a href="cases.html">Кейсы</a>
+    </nav>
+  </header>
+
+  <main class="center-content">
+    <p>Ваш текст</p>
+    <a class="button" href="https://t.me/w3bspy" target="_blank">Написать</a>
+  </main>
+</body>
+</html>
