@@ -1,43 +1,67 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Кейсы — Синтакс</title>
- <style>
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f7f7f5;
-    color: #000;
-    padding: 4rem 2rem 2rem;
-    line-height: 1.6;
-  }
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f5;
+      color: #000;
+      padding: 4rem 2rem 2rem;
+      line-height: 1.6;
+    }
 
-  h1 {
-    margin-bottom: 2rem;
-  }
+    h1 {
+      margin-bottom: 2rem;
+    }
 
-  .service, .case {
-    margin-bottom: 3rem;
-  }
+    a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      display: inline-block;
+      margin-bottom: 2rem;
+    }
 
-  .service h2, .case h2 {
-    margin-bottom: 0.5rem;
-  }
+    .case {
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      margin-bottom: 2.5rem;
+    }
 
-  p {
-    margin: 0.5rem 0 0;
-  }
+    .case h2 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-size: 1.4rem;
+      color: #333;
+    }
 
-  a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    display: inline-block;
-    margin-bottom: 2rem;
-  }
-</style>
+    .case h3 {
+      margin-top: 1.2rem;
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+      color: #666;
+    }
+
+    .case ul {
+      margin: 0;
+      padding-left: 1.2rem;
+    }
+
+    .case ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #157347; /* зелёный акцент */
+    }
+  </style>
 </head>
 <body>
   <a href="index.html">← Назад</a>
@@ -45,52 +69,61 @@
 
   <div class="case">
     <h2>Сервис по подбору персонала</h2>
-    <p><strong>Цель:</strong> Привлечь заявки от работодателей на подбор сотрудников.</p>
-    <p><strong>Что было сделано:</strong></p>
+    <h3>Цель</h3>
+    <p>Привлечь заявки от работодателей на подбор сотрудников.</p>
+
+    <h3>Что было сделано</h3>
     <ul>
-      <li>Настроена контекстная реклама в Яндекс.Директ по узким запросам.</li>
-      <li>Проведен анализ конкурентов и построена уникальная УТП.</li>
-      <li>Оптимизирован лендинг под нужды целевой аудитории.</li>
+      <li>Контекстная реклама в Яндекс.Директ по узким запросам.</li>
+      <li>Анализ конкурентов и формирование уникального УТП.</li>
+      <li>Оптимизация лендинга под нужды целевой аудитории.</li>
     </ul>
-    <p><strong>Результаты:</strong></p>
+
+    <h3>Результаты</h3>
     <ul>
-      <li>Количество заявок увеличено на 80%.</li>
-      <li>Стоимость заявки снижена с 1200₽ до 570₽.</li>
-      <li>Конверсия лендинга выросла с 1,8% до 4,5%.</li>
+      <li class="highlight">+80% заявок</li>
+      <li class="highlight">Снижение стоимости заявки с 1200₽ до 570₽</li>
+      <li class="highlight">Рост конверсии с 1.8% до 4.5%</li>
     </ul>
   </div>
 
   <div class="case">
     <h2>Онлайн-школа английского языка</h2>
-    <p><strong>Цель:</strong> Увеличить количество заявок на пробные уроки с минимальной стоимостью лида.</p>
-    <p><strong>Что было сделано:</strong></p>
+    <h3>Цель</h3>
+    <p>Увеличить количество заявок на пробные уроки с минимальной стоимостью лида.</p>
+
+    <h3>Что было сделано</h3>
     <ul>
-      <li>Настроена реклама в Facebook и Instagram с сегментацией по уровням языка и интересам.</li>
-      <li>Проведено A/B тестирование креативов и офферов.</li>
-      <li>Подключены автоворонки через мессенджеры.</li>
+      <li>Таргетированная реклама в Facebook и Instagram по уровням языка.</li>
+      <li>A/B тестирование креативов и офферов.</li>
+      <li>Настройка автоворонок через мессенджеры.</li>
     </ul>
-    <p><strong>Результаты:</strong></p>
+
+    <h3>Результаты</h3>
     <ul>
-      <li>Снижение стоимости лида с 850₽ до 320₽.</li>
-      <li>Увеличение конверсии в оплату на 27%.</li>
-      <li>Рост общей выручки на 40% за 3 месяца работы.</li>
+      <li class="highlight">Снижение CPL с 850₽ до 320₽</li>
+      <li class="highlight">+27% к конверсии в оплату</li>
+      <li class="highlight">+40% к выручке за 3 месяца</li>
     </ul>
   </div>
 
   <div class="case">
     <h2>Соцсети телеканала</h2>
-    <p><strong>Цель:</strong> Привлечь максимальное количество подписчиков с минимальной стоимостью.</p>
-    <p><strong>Что было сделано:</strong></p>
+    <h3>Цель</h3>
+    <p>Привлечь максимальное количество подписчиков с минимальной стоимостью.</p>
+
+    <h3>Что было сделано</h3>
     <ul>
-      <li>Разработаны адаптированные под ЦА креативы с ярким визуалом и чётким оффером.</li>
-      <li>Проведено A/B тестирование аудиторий и форматов.</li>
-      <li>Запуск нацеленной подписочной кампании в VK.</li>
+      <li>Создание креативов под целевую аудиторию.</li>
+      <li>A/B тестирование форматов и аудиторий.</li>
+      <li>Запуск подписочной кампании в VK.</li>
     </ul>
-    <p><strong>Результаты:</strong></p>
+
+    <h3>Результаты</h3>
     <ul>
-      <li>Цена за подписку: 19.34 ₽ — лучший показатель среди всех кампаний.</li>
-      <li>CTR: 5.03% — отличный уровень вовлечённости (норма по рынку — от 1.5%).</li>
-      <li>eCPC: в пределах нормы, около 6–7 ₽.</li>
+      <li class="highlight">Подписка — 19.34 ₽</li>
+      <li class="highlight">CTR — 5.03% (в 3 раза выше нормы)</li>
+      <li class="highlight">eCPC — 6–7 ₽ (в пределах нормы)</li>
     </ul>
   </div>
 
