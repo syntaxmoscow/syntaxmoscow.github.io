@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Синтакс - команда профессионалов, которая поможет вашему бизнесу расти с помощью маркетинга, стратегии и продакшн услуг.">
+    <meta name="keywords" content="маркетинг, реклама, SMM, дизайн, продакшн, таргетинг, стратегия, звук, Саунд-дизайн">
+    <meta name="author" content="Алексей, Синтакс">
+    <meta property="og:title" content="Маркетинг для бизнеса | Синтакс">
+    <meta property="og:description" content="Полный цикл от идеи до реализации для вашего бизнеса. Маркетинг, SMM, таргетированная реклама и другие услуги для роста вашего бренда.">
+    <meta property="og:image" content="path/to/your/image.jpg">
+    <meta property="og:url" content="https://your-website.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Маркетинг для бизнеса | Синтакс">
+    <meta name="twitter:description" content="Полный цикл от идеи до реализации для вашего бизнеса.">
+    <meta name="twitter:image" content="path/to/your/image.jpg">
+
+    <!-- Метатеги для России -->
+    <meta name="geo.region" content="RU">
+    <meta name="geo.placename" content="Россия">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    <meta name="language" content="ru-RU">
+    <meta http-equiv="Content-Language" content="ru">
+    
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="Синтакс">
+    <meta property="og:type" content="website">
+    <meta property="og:country-name" content="Russia">
+
+    <title>Маркетинг для бизнеса | Синтакс</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Общие стили */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        h1, h2, h3 {
+            color: #222;
+        }
+
+        /* Главный блок */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: radial-gradient(circle at 50% 50%, #2c3e50, #4ca1af); /* Мягкий градиент */
+            background-size: 400% 400%;
+            animation: gradientMove 8s ease infinite;
+            color: #fff;
+            text-align: center;
+        }
+
+        @keyframes gradientMove {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .hero p {
+            font-size: 1.3em;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        /* Кнопки с градиентом */
+        .btn-telegram {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 8px 16px;
+            background: linear-gradient(45deg, #0088cc, #00aaff);
+            color: white;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, background 0.3s ease;
+            margin: 15px auto;
+            font-size: 1em;
+        }
+
+        .btn-telegram:hover {
+            background: linear-gradient(45deg, #00aaff, #0088cc);
+            transform: translateY(-5px);
+        }
+
+        .telegram-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+        }
+
+        /* Обо мне */
+        .about {
+            padding: 60px 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .about h2 {
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+
+        .about p {
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        /* Навыки */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .skill {
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+        }
+
+        /* Услуги */
+        .services {
+            padding: 60px 20px;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+
+        .service-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .service-card {
+            background-color: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+
+        .service-card h3 {
+            margin-bottom: 10px;
+        }
+
+        /* Отзывы */
+        .testimonials {
+            padding: 60px 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .testimonial {
+            max-width: 600px;
+            margin: 20px auto;
+            font-style: italic;
+        }
+
+        /* Футер */
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            margin-top: -20px; /* Убираем зазор между футером и кнопкой */
+        }
+
+        footer a {
+            color: #adb5bd;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+
+        /* Нижняя кнопка с прямыми краями */
+        .contact .btn-telegram {
+            border-radius: 3; /* Убираем закругления */
+            width: 30%; /* Кнопка на всю ширину */
+            padding: 12px 20px; /* Увеличиваем высоту для удобства */
+            box-shadow: none; /* Убираем тень */
+            margin-top: 0; /* Убираем отступ сверху */
+        }
+
+        footer .contact {
+            margin-top: 0; /* Убираем отступ сверху футера */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Главный блок -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>SYNTAX | MOSCOW</h1>
+            <p>Напишите и начните новую историю</p>
+            <a href="https://t.me/w3bspy" class="btn-telegram">
+                <img src="img/tg_logo1.png" alt="Telegram" class="telegram-icon"> Telegram
+            </a>
+        </div>
+    </section>
+
+    <!-- Обо мне -->
+    <section class="about">
+        <h2>О нас</h2>
+        <p>Синтакс — бренды уже увеличили узнаваемость<br> и построили эмоциональную связь с аудиторией.<br></p>
+    </section>
+
+    <!-- Услуги -->
+    <section class="services">
+        <h2>Услуги</h2>
+        <div class="service-list">
+            <div class="service-card">
+                <h3>Реклама</h3>
+                <br><p>Ваша аудитория здесь</p><br>
+            </div>
+            <div class="service-card">
+                <h3>Дизайн</h3>
+                <br><p>Гармония формы и смысла</p><br>
+            </div>
+            <div class="service-card">
+                <h3>Продакшн</h3>
+                <br><p>Съёмка в 4K</p><br>
+            </div>
+            <div class="service-card">
+                <h3>Звук</h3>
+                <br><p>Погружаем в атмосферу</p><br>
+        </div>
+    </section>
+
+
+    <!-- Кнопка связи -->
+    <section class="contact">
+        <a href="https://t.me/w3bspy" class="btn-telegram">
+            <img src="img/tg_logo1.png" alt="Telegram" class="telegram-icon"> Telegram
+        </a>
+    </section>
+
+</body>
+</html>
